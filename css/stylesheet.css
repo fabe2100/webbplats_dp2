@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("/images/bild1.jpg") center/cover no-repeat; /* Lägg till bakgrundsbild för headern */
+
+  }
+  header {
+    color: #fff; /* Textfärg för headern */
+    display: flex; /* Använd flexbox för att ordna loggan och menyn i en rad */
+    align-items: center; /* Centrera innehållet vertikalt */
+    justify-content: space-between; /* Placera loggan till vänster och menyn till höger */
+  }
+
+  .logo img {
+    max-width: 100%; /* Säkerställ att loggan inte blir bredare än dess förälderekts bredd */
+    height: auto;
+    padding-bottom: 180px;
+  }
+
+  nav {
+    text-align: center; /* Centrera texten i menyn */
+    flex-grow: 1; /* Flex-grow för att få menyn att expandera och ta upp resten av utrymmet */
+    padding-bottom: 200px;
+  }
+
+  nav a {
+    color: #fff; /* Textfärg för menylänkar */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+  }
