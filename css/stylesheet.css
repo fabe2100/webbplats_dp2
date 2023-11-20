@@ -1,83 +1,176 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: url("/images/bild1.jpg") center/cover no-repeat; /* Lägg till bakgrundsbild för headern */
-    min-height: 100vh; /* Set minimum height to full viewport height */
-    position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* minimum höjd till full viewport höjd */
+  position: relative;
+  
+}
+/*class för att styla header bild*/
+.home{
+  background: url("/images/bild1.jpg") center/cover no-repeat; /* bakgrundsbild för headern */
+  max-width: 100%;
+  height: auto;}
 
-  }
-  header {
-    color: #fff; /* Textfärg för headern */
-    display: flex; /* Använd flexbox för att ordna loggan och menyn i en rad */
-    align-items: center; /* Centrera innehållet vertikalt */
-    justify-content: space-between; /* Placera loggan till vänster och menyn till höger */
-  }
+header {
+  color: #fff; /* Textfärg för headern */
+  display: flex; /* flexbox för att ordna loggan och menyn i en rad */
+  align-items: center; /* Centrera innehållet vertikalt */
+  justify-content: space-between; /* Placera loggan till vänster och menyn till höger */
+}
+/*Styling av logotypen*/
+.logo img {
+  max-width: 100%; /* Säkerställ att loggan inte blir bredare än dess förälderekts bredd */
+  height: auto;
+  padding-bottom: 180px;
+}
+/*Styling av navigationen*/
+nav {
+  margin-right: 250px;
+  text-align: center; /* Centrera texten i menyn */
+  flex-grow: 1; /*för att få menyn att expandera  */
+  padding-bottom: 230px;
+}
+/*Styling av menyns länkar*/
+nav a {
+  position: relative;
+  transition: color 0.3s ease; 
+  color: #fff; 
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-  .logo img {
-    max-width: 100%; /* Säkerställ att loggan inte blir bredare än dess förälderekts bredd */
-    height: auto;
-    padding-bottom: 180px;
-  }
+}
+/*Hover effekt på menyns länkar*/
+nav a:hover {
+  color: #f7ed92;
+ 
 
-  nav {
-    text-align: center; /* Centrera texten i menyn */
-    flex-grow: 1; /* Flex-grow för att få menyn att expandera och ta upp resten av utrymmet */
-    padding-bottom: 200px;
-  }
+}
+/*Styling av hover effekten*/
+nav a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #f7ed92;
+  bottom: 0;
+  left: 0;
+}
+/*footer med flex */
+footer {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: #f7ed92;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
 
-  nav a {
-    color: #fff; /* Textfärg för menylänkar */
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-  }
+.box {
+  flex: 1 0 10%; /* Använd flexbox för att dela upp utrymmet jämnt */
+  margin: 10px;
+  text-align: center;
+}
+/*flexbox 2 av menyn*/
+.menu-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  /* styling av menu boxen */
+}
+.menu-flexbox a {
+  text-decoration: none;
+  color: black;
+  text-align: start;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu-flexbox a:hover {
+  color: rgb(179, 116, 22);
+}
+/*flexbox 3 av adress*/
+
+.address-flexbox {
+  text-align: start;
+}
+/*flexbox 4 av Öppettider*/
+
+.hours-flexbox {
+  text-align: start;
+}
+/*flexbox 5 av social media*/
+
+.social-media-flexbox {
+  padding-top: 50px;
+  margin-right: 20px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+/* Styling av Font ikoner */
+.fa {
+  border-radius: 1.7rem;
+  margin: 3px;
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* hover effekt till sociala medier ikoner */
+.fa:hover {
+  opacity: 0.7;
+}
 
 
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
 
+/* Twitter */
+.fa-tiktok {
+  background: rgb(58, 58, 52);
+  color: white;
+}
+.fa-instagram {
+  background: rgb(80, 20, 20);
+  color: white;
+}
 
+address{
+line-height: 1.8em;
+}
 
-  footer {
-    background: #333;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
+.without-img{
 
-  .box {
-    flex: 1 0 10%; /* Använd flexbox för att dela upp utrymmet jämnt */
-    margin: 10px;
-    text-align: center;
-  }
+  background-color: black;
+  height: 150px;
+}
+.nav-without-img  {
+  transition: color 0.3s ease; 
+  color: #fff; 
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-  .logo-box {
-    /* Stilar för logo-box, här kan du lägga till logo eller annat innehåll */
-  }
-
-  .menu-box {
-    /* Stilar för meny-box, här kan du lägga till meny-länkar eller annat innehåll */
-  }
-
-  .address-box {
-    /* Stilar för adress-box, här kan du lägga till adressinformation eller annat innehåll */
-  }
-
-  .hours-box {
-    /* Stilar för öppettider-box, här kan du lägga till öppettider eller annat innehåll */
-  }
-
-  .social-media-box {
-    /* Stilar för sociala medier-box, här kan du lägga till ikoner eller annat innehåll */
-  }
-
-  /* Exempel på ikoner för sociala medier */
-  .social-icon {
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-  }
+}
+.logo-without-img img {
+  max-width: 100%; /* Säkerställ att loggan inte blir bredare än dess förälderekts bredd */
+}
