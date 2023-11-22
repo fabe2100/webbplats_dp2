@@ -1,0 +1,334 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 590;
+  line-height: 1.6em;
+  font-size: 1.1em;
+  color: black;
+  letter-spacing: 0.03em;
+}
+
+/*class för att styla header bild*/
+.home {
+  background: url("/images/bild1.jpg") center/cover no-repeat; /* bakgrundsbild för headern */
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  color: #fff; /* Textfärg för headern */
+  display: flex; /* flexbox för att ordna loggan och menyn i en rad */
+  align-items: center; /* Centrera innehållet vertikalt */
+  justify-content: space-between; /* Placera loggan till vänster och menyn till höger */
+}
+/*Styling av logotypen*/
+.logo img {
+  width: 200px;
+  max-width: 100%; /* Säkerställ att loggan inte blir bredare än dess förälderekts bredd */
+  height: auto;
+  padding-bottom: 180px;
+}
+/*Styling av navigationen*/
+nav {
+  margin-right: 250px;
+  text-align: center; /* Centrera texten i menyn */
+  flex-grow: 1; /*för att få menyn att expandera  */
+  padding-bottom: 230px;
+}
+/*Styling av menyns länkar*/
+nav a {
+  font-family: calibri;
+
+  position: relative;
+  transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+/*Hover effekt på menyns länkar*/
+nav a:hover {
+  color: #f7ed92;
+}
+/*Styling av hover effekten*/
+nav a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #f7ed92;
+  bottom: 0;
+  left: 0;
+}
+.welcome {
+  letter-spacing: 0.1em;
+  font-size: 1.3em;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+/*Styling av rubriken Etoile på header*/
+.etoile {
+  font-family: "Playfair Display", serif;
+  font-size: 4em;
+  line-height: 0.1;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+/*klass för första sektionen av texten på startsidan*/
+/*.article1 p {
+  font-weight: 500;
+  line-height: 1.4em;
+  font-size: 1.1em;
+}*/
+.article1 {
+  margin: 70px 120px;
+  padding: 20px;
+  border: 5px black;
+  border-style: outset;
+  display: flex;
+}
+.bg-img{
+  background-image: linear-gradient(to bottom, rgba(13, 12, 13, 0.818), rgba(7, 7, 7, 0.5)), url("/images/Vildsvampsrisotto-min\ 1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.our-filosofy{
+  color: white;
+  margin:rgb(135, 132, 132) 120px;
+  padding: 20px;
+  /*border: 5px solid black;*/
+}
+.article2 h2{
+  line-height: 1.2em;
+
+  text-align: center;
+  font-size: 2em;
+  font-family: "Playfair Display", serif;
+}
+.article2 p{
+  margin: 20px 370px 150px 370px ;
+}
+.article4{
+  padding-top: 80px;
+}
+.article3{
+  padding-top: 80px;
+  display: flex;
+  margin-left: 150px;
+}
+.article3-img{
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 5px;
+padding-right: 160px;
+width: 350px;
+  margin: auto;
+}
+.article4{
+  display: flex;
+  margin-right: 200px;
+}
+.article4-img{
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 5px;
+width: 350px;
+margin-left: 100px;
+}
+.article3-img:hover {
+  transform:scale(1.2);
+}
+.article4-img:hover {
+  transform:scale(1.2);
+}
+
+
+/*footer med flex */
+footer {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: #f7ed92;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.box {
+  flex: 1 0 10%; /* flexbox för att dela upp utrymmet jämnt */
+  margin: 10px;
+  text-align: center;
+}
+/*flexbox 2 av menyn*/
+.menu-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  /* styling av menu boxen */
+}
+.menu-flexbox a {
+  text-decoration: none;
+  color: black;
+  text-align: start;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.menu-flexbox a:hover {
+  color: rgb(179, 116, 22);
+}
+/*flexbox 3 av adress*/
+
+.address-flexbox {
+  text-align: start;
+}
+/*flexbox 4 av Öppettider*/
+
+.hours-flexbox {
+  text-align: start;
+}
+/*flexbox 5 av social media*/
+
+.social-media-flexbox {
+  padding-top: 50px;
+  margin-right: 20px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+/* Styling av Font ikoner */
+.fa {
+  border-radius: 1.7rem;
+  margin: 3px;
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* hover effekt till sociala medier ikoner */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-tiktok {
+  background: rgb(58, 58, 52);
+  color: white;
+}
+.fa-instagram {
+  background: rgb(80, 20, 20);
+  color: white;
+}
+
+address {
+  line-height: 1.8em;
+}
+/*styling av menyn på andra sidor som inte har hero bilden*/
+.without-img {
+  background-color: black;
+  height: 150px;
+}
+.nav-without-img {
+  transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.logo-without-img img {
+  max-width: 100%; /* Säkerställ att loggan inte blir bredare än dess förälderekts bredd */
+}
+/*klass box-section för att styla välkomsttexten som finns i headern av startsidan med rubrik*/
+.box-section {
+  position: absolute;
+  width: 600px;
+  margin: 140px 50px 50px 415px;
+  background-color: rgba(0, 0, 0, 0.721);
+  border-radius: 15px;
+  padding: 0px 50px 0px 50px;
+}
+.box-section h1 {
+  text-align: center;
+}
+
+
+
+/*Rasha css kod för meny sida*/
+/*Styling av box för text*/
+.gray1{
+  background-color: #f7ed92;
+  width: 700px;
+  height: 250px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 20px;
+
+  /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+/*Styling av foto och text*/
+.section-menu{
+  display: grid;
+  grid-template-columns: 800px 1fr;
+  column-gap: 5px;
+  margin-bottom: 50px;
+}
+/*Styling av text*/
+.gray{
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  text-shadow: 3px 3px 5px black; 
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+}
+.article-menu{
+  background-color: #f7ed92;
+  background-attachment: fixed;
+  margin-left: 100px;
+  margin-right: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 10px 10px 10px black; 
+}
+.img-menu{
+  border-radius: 30px;
+}
+.h3-menu {
+  font-size: 30px;
+  font-family: 'Calibri';
+  font-style: normal;
+}
+
+
+
