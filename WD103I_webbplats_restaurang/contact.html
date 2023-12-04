@@ -1,5 +1,3 @@
-<!--Svitlana eller Shrivan-->
-
 <!DOCTYPE html>
 <html lang="sv">
 
@@ -8,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css">
 
-    <!--Fonts from Google-->
+    <!-- Fonts from Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- icon library -->
+    <!-- Icon library -->
     <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <title>Restaurang Etoile</title>
 </head>
 
 <body>
-    <!--Header med logo och meny länkar-->
+    <!-- Header med logo och meny länkar -->
     <header class="without-img">
         <div class="logo-without-img">
-            <a href="index.html"><img src="images/logo.png" alt="Logotyp" width="210"></a>
+            <a href="index.html"><img src="images/logo.png" alt="Logotyp"></a>
         </div>
-        <!--Navigation-->
+        <!-- Navigation -->
         <nav class="nav-without-img">
             <a href="index.html">HEM</a>
             <a href="menu.html">MENY</a>
@@ -32,29 +31,55 @@
             <a href="contact.html" class="active">KONTAKTA OSS</a>
         </nav>
     </header>
+    <!--Breadcrumb meny-->
+    <ul class="breadcrumb">
+        <li><a href="index.html">Hem</a></li>
+        <li>Kontakta Oss</li>
+    </ul>
+    <!-- Kod här för kontakt sidan -->
+    <div class="container">
+        <h1 class="container-title">Kontakta Oss</h1>
+        <section class="contact-content">
+            <div class="contact__content-details">
+                <div>
+                    <h3>Adress:</h3>
+                    <p>Västerlånggatan 62, 111 29 Stockholm</p>
+                </div>
+                <div>
+                    <h3>Öppettider:</h3>
+                    <p>
+                        <span>Måndag: Stängt</span><br>
+                        <span>Tisdag: Stängt</span><br>
+                        <span>Onsdag: 17.00 - 01.00</span><br>
+                        <span>Torsdag: 17.00 - 01.00</span><br>
+                        <span>Fredag: 17.00 - 01.00</span><br>
+                        <span>Lördag: 17.00 - 01.00</span><br>
+                        <span>Söndag: 17.00 - 01.00</span><br>
+                    </p>
+                </div>
 
-<!--Kod här för kontakt sidan-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--Footer sektionen -->
+                <div>
+                    <h3>Kontakta Oss:</h3>
+                    <p>
+                        <span>+46 73 337 77 77</span><br>
+                        <span>Bokning@etoile.se</span>
+                    </p>
+                </div>
+            </div>
+            <div class="contact__content-map">
+                <iframe
+                    src="https://maps.google.com/maps?q=V%C3%A4sterl%C3%A5nggatan%2062,%20111%2029%20Stockholm&amp;output=embed"
+                    class="contact__map" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </div>
     <footer>
-        <!--5 boxar med flex för logo, meny länkar, adress. öppettider och social media -->
+        <!-- 5 boxar med flex för logo, meny länkar, adress, öppettider och sociala medier -->
         <div class="box logo-flexbox">
             <a href="index.html"><img src="images/logo.png" alt="Logotyp"></a>
         </div>
 
-        <!--Andra boxen med menylänkar-->
+        <!-- Andra boxen med menylänkar -->
         <div class="box menu-flexbox">
             <a href="menu.html">Meny</a>
             <a href="reservation.html">Boka Bord</a>
@@ -62,7 +87,7 @@
             <a href="about.html">Om oss</a>
         </div>
 
-        <!--Tredje boxen till Adress-->
+        <!-- Tredje boxen till Adress -->
         <div class="box address-flexbox">
             <h3>Adress</h3>
             <address>
@@ -71,20 +96,18 @@
             </address>
         </div>
 
-        <!--Fjärde boxen till Öppettider-->
+        <!-- Fjärde boxen till Öppettider -->
         <div class="box hours-flexbox">
             <h3>Öppettider:</h3>
-            <p>Måndag & Tisdag:</p>
-            <p>Stängt</p>
-            <p>Onsdag till Söndag:</p>
-            <p>17.00 - 01.00</p>
+            <p>Måndag & Tisdag: Stängt</p>
+            <p>Onsdag till Söndag: 17.00 - 01.00</p>
         </div>
 
-        <!--Femte boxen till innehåll för sociala medier-->
+        <!-- Femte boxen till innehåll för sociala medier -->
         <div class="box social-media-flexbox">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-tiktok"></a>
+            <a href="www.facebook.com" aria-label="länk1_facebook" class="fa fa-facebook"></a>
+            <a href="www.instagram.com" aria-label="länk2_instagram" class="fa fa-instagram"></a>
+            <a href="www.tiktok.com" aria-label="länk3_tiktok" class="fa fa-tiktok"></a>
         </div>
     </footer>
 </body>

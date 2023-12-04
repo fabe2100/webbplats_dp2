@@ -1,0 +1,55 @@
+/*Rasha css kod för meny sida*/
+/*Styling av box för text*/
+.gray1 {
+    background-color: #f7ed92;
+    width: 700px;
+    height: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+  
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  /*Styling av foto och text*/
+  .section-menu {
+    display: grid;
+    grid-template-columns: 800px 1fr;
+    column-gap: 5px;
+    margin-bottom: 50px;
+  }
+  
+  /*Styling av text*/
+  .gray {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    text-shadow: 3px 3px 5px black;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  
+  .article-menu {
+    background-color: #f7ed92;
+    background-attachment: fixed;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px black;
+  }
+  
+  .img-menu {
+    border-radius: 30px;
+  }
+  
+  .h3-menu {
+    font-size: 30px;
+    font-family: "Calibri";
+    font-style: normal;
+  }
